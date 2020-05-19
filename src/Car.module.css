@@ -1,0 +1,10 @@
+.Car {
+    background-color: brown;
+    font-size: 5rem;
+    padding: 0.1rem;
+    border: 0.3rem solid chocolate;
+    border-radius: 0.4rem;
+    position: fixed;
+    top: 5rem;
+    right: 5rem;
+}
