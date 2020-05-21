@@ -4,19 +4,13 @@
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
-  padding: 1em;
-  font-size: 1.5em;
+  padding: 1rem;
+  font-size: 1.5rem;
   color: white;
   display: flex;
 }
 
 .controls p {
-  margin: 0 0.5em 0.5em 0.5em;
+  margin: 0 0.5rem 0.5rem 0.5rem;
 }
 
-.controls button {
-  width: 120px;
-  height: 40px;
-  font-size: 1em;
-  border-radius: 0.5em;
-}

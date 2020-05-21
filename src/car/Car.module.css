@@ -2,9 +2,10 @@
   background-color: hotpink;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .car div {
   padding: 20px;
-  font-size: 1.5em;
+  font-size: 1.3rem;
 }

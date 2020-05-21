@@ -8,12 +8,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   text-align: center;
 }
 
 .logo {
-  height: 5em;
+  height: 7rem;
   pointer-events: none;
 }
 

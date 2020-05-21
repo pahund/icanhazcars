@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Car.module.css";
+import{AddCar}from'../addCar';
 
 function Car({ image, location, make, mileage, price, title }) {
   return (
@@ -16,6 +17,7 @@ function Car({ image, location, make, mileage, price, title }) {
         <br />
         price: {price}
       </div>
+      <AddCar/>
     </div>
   );
 }

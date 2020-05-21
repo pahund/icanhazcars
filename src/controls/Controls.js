@@ -3,9 +3,10 @@ import styles from "./Controls.module.css";
 import { useRecoilState } from "recoil";
 import { allCarsState } from "../allCars";
 import { CharacterCounter } from "../characterCounter";
+import { Button } from "../ui";
 
 function Controls() {
-  const [,setAllCars] = useRecoilState(allCarsState);
+  const [, setAllCars] = useRecoilState(allCarsState);
   const onClickCarsButton = () => {
     fetch("https://fakecarsapi.appspot.com/")
       .then((res) => res.json())
@@ -16,7 +17,7 @@ function Controls() {
       <div>
         <p>Click here to get cars:</p>
         <p>
-          <button onClick={onClickCarsButton}>Cars!!1!</button>
+          <Button onClick={onClickCarsButton}>Cars!!1!</Button>
         </p>
       </div>
       <div>
