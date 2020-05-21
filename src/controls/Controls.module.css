@@ -1,7 +1,22 @@
 .controls {
-    background-color:purple;
-    grid-column-start: 2;
-    grid-column-end:3;
-    grid-row-start:1;
-    grid-row-end:2;
+  background-color: purple;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 1em;
+  font-size: 1.5em;
+  color: white;
+  display: flex;
+}
+
+.controls p {
+  margin: 0 0.5em 0.5em 0.5em;
+}
+
+.controls button {
+  width: 120px;
+  height: 40px;
+  font-size: 1em;
+  border-radius: 0.5em;
 }
