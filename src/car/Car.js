@@ -1,10 +1,20 @@
 import React from "react";
 import styles from "./Car.module.css";
-import{AddCar}from'../addCar';
+import { AddCar } from "../addCar";
 
-function Car({ image, location, make, mileage, price, title }) {
+function Car({
+  id,
+  image,
+  location,
+  make,
+  mileage,
+  price,
+  title,
+  available,
+  small,
+}) {
   return (
-    <div className={styles.car}>
+    <div className={`${styles.car} ${small ? styles.small : ""}`}>
       <img src={image} alt={title} />
       <div>
         <strong>{title}</strong>
@@ -17,7 +27,7 @@ function Car({ image, location, make, mileage, price, title }) {
         <br />
         price: {price}
       </div>
-      <AddCar/>
+      {available && <AddCar id={id} />}
     </div>
   );
 }

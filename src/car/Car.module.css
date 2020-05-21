@@ -9,3 +9,16 @@
   padding: 20px;
   font-size: 1.3rem;
 }
+
+.car img {
+  width: 300px;
+}
+
+.small div {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.small img {
+  width: 150px;
+}

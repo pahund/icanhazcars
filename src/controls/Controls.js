@@ -7,10 +7,11 @@ import { Button } from "../ui";
 
 function Controls() {
   const [, setAllCars] = useRecoilState(allCarsState);
-  const onClickCarsButton = () => {
-    fetch("https://fakecarsapi.appspot.com/")
-      .then((res) => res.json())
-      .then(setAllCars);
+  const onClickCarsButton = async () => {
+    const cars = await fetch("https://fakecarsapi.appspot.com/").then((res) =>
+      res.json()
+    );
+    setAllCars(cars.map((car) => ({ ...car, selected: false })));
   };
   return (
     <div className={styles.controls}>

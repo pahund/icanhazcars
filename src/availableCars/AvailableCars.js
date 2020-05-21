@@ -1,15 +1,15 @@
 import React from "react";
-import { useRecoilState } from "recoil";
-import { allCarsState } from "../allCars";
+import { useRecoilValue } from "recoil";
+import availableCarsState from "./availableCarsState";
 import styles from "./AvailableCars.module.css";
 import { Car } from "../car";
 
 function AvailableCars() {
-  const [allCars] = useRecoilState(allCarsState);
+  const availableCars = useRecoilValue(availableCarsState);
   return (
     <div className={styles.availableCars}>
-      {allCars.map((car) => (
-        <Car key={`car${car.id}`}{...car} />
+      {availableCars.map((car) => (
+        <Car key={`car${car.id}`} available {...car} />
       ))}
     </div>
   );
