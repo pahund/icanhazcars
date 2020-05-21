@@ -1,4 +1,8 @@
 .app {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 300px auto 300px;
+  grid-template-rows: 300px auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: hotpink;
 }
-

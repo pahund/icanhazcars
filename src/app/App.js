@@ -1,13 +1,17 @@
 import React from "react";
-import { Car } from "../car";
+import { Controls } from "../controls";
 import { Header } from "../header";
+import { AvailableCars } from "../availableCars";
+import { MyCars } from "../myCars";
 import styles from "./App.module.css";
 
 function App() {
   return (
     <div className={styles.app}>
       <Header />
-      <Car />
+      <Controls />
+      <AvailableCars />
+      <MyCars />
     </div>
   );
 }
