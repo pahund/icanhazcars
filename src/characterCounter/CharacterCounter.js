@@ -4,10 +4,10 @@ import { TextInput } from "../textInput";
 
 function CharacterCounter() {
   return (
-    <div>
-      <TextInput />
+    <>
+      <TextInput /><br/>
       <CharacterCount />
-    </div>
+    </>
   );
 }
 

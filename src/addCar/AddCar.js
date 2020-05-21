@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./AddCar.module.css";
 
 function AddCar() {
-  return <div className={styles.addCar} />;
+  return <button className={styles.addCar}>I can haz!</button>;
 }
 
 export default AddCar;
